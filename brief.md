@@ -21,10 +21,19 @@ An offline-first mobile application allows emergency responders to access essent
 Resource: Build an offline-first app - https://developer.android.com/topic/architecture/data-layer/offline-first
 
 ## Networking
+5G network slicing allows mobile operators to create separate logical networks on shared infrastructure, each designed for specific service requirements. For emergency responders, a dedicated slice can provide priority access, low latency, suitable quality of service, and logical isolation to support reliable communication during congestion. However, slicing cannot eliminate all failures because networks may share physical resources. Therefore, operators should combine it with redundancy, monitoring, and tested failover procedures.
+
+Resource: 3GPP: Network Slicing - https://www.3gpp.org/technologies/network-slicing
 
 ## Cybersecurity
+An incident response lifecycle helps organizations detect, contain, and recover from cyberattacks. The main phases include preparation, identification, containment, eradication, recovery, and lessons learned. For emergency communication services, the response team should monitor security alerts, isolate compromised systems, remove threats, restore reliable operations, and review incidents to improve future protection. Clear responsibilities, secure backups, evidence preservation, and tested recovery procedures help protect emergency responders and maintain service continuity.
+
+Resource: NIST SP 800-61 Rev. 3: Incident Response Recommendations and Considerations for Cybersecurity Risk Management - https://csrc.nist.gov/pubs/sp/800/61/r3/final
 
 ## Data
+A star schema and a snowflake schema are data warehouse designs used to organize information for reporting. A star schema connects dimension tables directly to a central fact table, making queries simpler and reports easier to understand. A snowflake schema separates dimensions into additional related tables, reducing duplicated data but requiring more joins. For daily telecom usage reports by region, a star schema is recommended because it supports straightforward analysis and efficient reporting.
+
+Resource: Star schema and the importance for Power BI - https://learn.microsoft.com/en-us/power-bi/guidance/star-schema
 
 ## Misconception in My Track
 
