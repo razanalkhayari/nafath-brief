@@ -36,5 +36,7 @@ A star schema and a snowflake schema are data warehouse designs used to organize
 Resource: Star schema and the importance for Power BI - https://learn.microsoft.com/en-us/power-bi/guidance/star-schema
 
 ## Misconception in My Track
+A common misconception in software engineering is that repeating an HTTP request after a network failure will always produce the same result without causing problems. In reality, this depends on the HTTP method and how the application handles the request. According to RFC 9110, idempotent methods have the same intended effect when performed multiple times, but this does not mean that every request is safe to repeat. For example, repeating a non-idempotent POST request may create duplicate emergency reports. The section titled “Idempotent Methods” in RFC 9110 explains this distinction. Developers should use appropriate request-handling mechanisms to prevent duplicate processing.
 
 ## Open Question
+How can a software system guarantee that an emergency incident report is processed only once when the client loses its connection before receiving the server’s response? I would investigate how idempotency keys, unique request identifiers, and database transactions can prevent duplicate reports during network failures.
